@@ -1,0 +1,11 @@
+import WrapperHoc from "./wraphoc.jsx"
+
+function LikePostHoc(props) {
+  return (
+    <div>
+      <button onClick={props.handleCounter}>Like Post {props.counter}</button>
+    </div>
+  )
+}
+
+export default WrapperHoc(LikePostHoc);
